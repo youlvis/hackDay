@@ -9,12 +9,13 @@ import { PolarAreaChartComponent } from './polar-area-chart/polar-area-chart.com
 @NgModule({
   declarations: [
     AppComponent,
-    PolarAreaChartComponent
+    PolarAreaChartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
