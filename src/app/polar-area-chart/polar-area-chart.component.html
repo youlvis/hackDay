@@ -1,33 +1,56 @@
-<div class="chart-container">
-    <canvas  id="MyChart" >{{ chart }}</canvas>
+<div class="row">
+  <div class="column">
+    <div class="chart-container">
+      <canvas id="MyChart">{{ chart }}</canvas>
+    </div>
+  </div>
+  <div>
+    {{cantidad[0]}}
+  </div>
+  <div class="column">
+    <div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of usuariosLlamada">
+            <th>{{ item[0] }}</th>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+          </tr>
+          <tr *ngFor="let item of usuariosEspera">
+            <th>{{ item[0] }}</th>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+          </tr>
+          <tr *ngFor="let item of usuariosACW">
+            <th>{{ item[0] }}</th>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
 
-<div>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Id</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Estado</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let item of usuariosLlamada">
-            <th>{{item[0]}}</th>
-            <td>{{item[1]}}</td>
-            <td>{{item[2]}}</td>
-          </tr>
-        <tr *ngFor="let item of usuariosEspera">
-            <th>{{item[0]}}</th>
-            <td>{{item[1]}}</td>
-            <td>{{item[2]}}</td>
-        </tr>
-        <tr *ngFor="let item of usuariosACW">
-            <th>{{item[0]}}</th>
-            <td>{{item[1]}}</td>
-            <td>{{item[2]}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
+<div class="chart-container">
+  <canvas id="chartEventos">{{ chartEventos }}</canvas>
+</div>
+<div class="chart-container">
+  <canvas id="chartLlamadas">{{ chartLlamadas }}</canvas>
+</div>
+<div class="chart-container">
+  <canvas id="chartTiempoACW">{{ chartTiempoACW }}</canvas>
+</div>
+<div class="chart-container">
+  <canvas id="chartVentas">{{ chartVentas }}</canvas>
+</div>
+<div class="chart-container">
+  <canvas id="chartErrores">{{ chartErrores }}</canvas>
+</div>
