@@ -1,0 +1,14 @@
+.displayCus {
+  display: flex;
+  justify-content: center;
+}
+
+.margiCum {
+    margin: 10px;
+    font-size: 20px;
+    border: 1px solid rgba(121, 120, 120, 0.493);
+    border-radius: 5px;
+    padding: 3px;
+    font-family: Helvetica, sans-serif;
+    
+}
