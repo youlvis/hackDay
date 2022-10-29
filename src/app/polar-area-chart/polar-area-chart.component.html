@@ -3,10 +3,31 @@
 </div>
 
 <div>
-    {{detEventoEstAct | json}}
-</div>
-
-<div>
-    {{cantidad | json}}
-</div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of usuariosLlamada">
+            <th>{{item[0]}}</th>
+            <td>{{item[1]}}</td>
+            <td>{{item[2]}}</td>
+          </tr>
+        <tr *ngFor="let item of usuariosEspera">
+            <th>{{item[0]}}</th>
+            <td>{{item[1]}}</td>
+            <td>{{item[2]}}</td>
+        </tr>
+        <tr *ngFor="let item of usuariosACW">
+            <th>{{item[0]}}</th>
+            <td>{{item[1]}}</td>
+            <td>{{item[2]}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
