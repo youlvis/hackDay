@@ -1,4 +1,6 @@
+import { ParseSourceFile } from '@angular/compiler';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hackDay';
+  
+  title = 'Desarrollo de soft solutions';
+  data = [[1,2,3,4,5,6],[1,2,3,4,5,6],[1,2,3,4,5,6],[1,2,3,4,5,6]]
+  //datos = JSON.parse("datos.json");
 }
